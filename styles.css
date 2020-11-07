@@ -1,0 +1,54 @@
+#projectName {
+    font-family: Roboto black;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.projectSubname {
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+#jumb {
+    background-image: linear-gradient(to right, #138a4d , #49be7a);
+    color: white;
+    height: 35vh;
+}
+
+#svgHeart {
+    margin-top: 50px;
+    color: #49be7a;
+}
+
+#svgPeople {
+    margin-top: 50px;
+    color: #49be7a;
+}
+
+.card-body {
+    text-align: left;
+}
+
+.container {
+    font-family: Roboto;
+}
+
+#form-present {
+    margin-top: 2vh;
+    text-align: center;
+}
+
+#form-present-sub {
+    text-align: center;
+    font-family: Roboto light;
+}
+
+#heart-icon {
+    margin-left: 20px;
+}
+
+#dataForm {
+    width: 50%;
+    margin-left: 25%;
+    font-size: 5px;
+}
