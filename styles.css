@@ -63,3 +63,14 @@
     color: #49be7a;
     text-align: certer;
 }
+
+.purpleMark {
+    background-color: #8d4bb7;
+    border-radius: 30px;
+    width: 200px;
+    color: #8d4bb7;
+}
+
+#downarea {
+    margin-top: 200px;
+}
