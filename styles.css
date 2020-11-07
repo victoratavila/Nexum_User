@@ -79,3 +79,32 @@
 #cadastrarBtn {
     width: 100%;
 }
+
+#firstSquare {
+    background-image: linear-gradient(to right, #138a4d , #49be7a);
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: Roboto regular
+}
+
+.principles-card {
+    text-align: center;
+}
+
+.principles-card h3 {
+    font-family: Roboto regular;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.card-body {
+    background-color: #f5f5f5;
+}
+
+#cardBg {
+    background-color: #f5f5f5;
+}
