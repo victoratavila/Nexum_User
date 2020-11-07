@@ -52,3 +52,14 @@
     margin-left: 25%;
     font-size: 5px;
 }
+
+#title2 {
+    text-align: left;
+}
+
+#subtitle2 {
+    font-family: Roboto Mono;
+    font-weight: 400;
+    color: #49be7a;
+    text-align: certer;
+}
