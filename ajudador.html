@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
+
+    <title>Nexum</title>
+  </head>
+  <body style="background-color: #fbf9f9;">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="./index.html">
+          <img src="./assets/icon.png"  width="40" height="40" class="d-inline-block align-top" alt="" loading="lazy">
+          <i id = "projectName">Nexum</i> 
+        </a>
+
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Digite algo" style="border-radius: 15px;" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="border-radius: 15px;">Buscar</button>
+        </form>
+    </nav>
+
+   <div class="container">
+
+    <a class = "btn btn-outline-success" href="./index.html"> <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-left-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+    </svg> Voltar</a>
+
+       <div>
+      <h1 id = "form-present">Quer ser um ajudador? =)</h1>
+
+     
+      <h4 id = "form-present-sub">Informe seus dados e nossa equipe entrará em contato com você <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+      </svg></h4> <br>
+   
+      <form action="" method="post" class = "form-group form-pattern" id = "dataForm"> <br>
+   
+          <input type="text" class = "form-control" required placeholder="Nome" style="margin-bottom: 10px; font-size: 20px" id="firstName" name = "firstName">
+          <input type="text" class = "form-control" required placeholder="Sobrenome" style="margin-bottom: 10px; font-size: 20px" id="lastName" name="lastName">
+          <input type="email" class = "form-control" required placeholder="Email" style="margin-bottom: 10px; font-size: 20px" id = "email" name = "email">
+
+         
+          <input type="text" class="form-control" required placeholder="País atual" style="margin-bottom: 10px; font-size: 20px" id="currentCountry" name="currentCountry">
+          <input type="text" class="form-control" required placeholder="Cidade atual" style="margin-bottom: 10px; font-size: 20px" id="currentCity" name="currentCity">
+
+          <select class="form-control" required name = "businessman" id="businessman" style = " margin-bottom: 10px; font-size: 20px"> 
+            <option disabled selected>Empresário</option>
+            <option value="true">Verdadeiro</option>
+            <option value="false">Falso</option>
+        </select>
+
+        <select class="form-control" required name = "jobHelp" id="jobHelp" style = " margin-bottom: 10px; font-size: 20px"> 
+            <option disabled selected>Oferece emprego?</option>
+            <option value="true">Verdadeiro</option>
+            <option value="false">Falso</option>
+        </select>
+
+        <select class="form-control" required name = "habitationHelp" id="habitationHelp" style = " margin-bottom: 10px; font-size: 20px"> 
+            <option disabled selected>Oferece moradia?</option>
+            <option value="true">Verdadeiro</option>
+            <option value="false">Falso</option>
+        </select>
+
+        <select class="form-control" required name = "studyingHelp" id="studyingHelp" style = " margin-bottom: 10px; font-size: 20px"> 
+            <option disabled selected>Oferece</option>
+            <option value="true">Verdadeiro</option>
+            <option value="false">Falso</option>
+        </select>
+
+
+        <textarea class="form-control" placeholder="Por favor descreva a ajuda que quer oferecer" id="helpDescription" rows="3"></textarea> <br>
+
+          <button type="button" id = "btnSendData" class = "btn btn-success" style="width: 100%">Cadastrar</button>
+      </form>
+    </div>
+
+   </div>
+
+
+   <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Sucesso!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          O imigrante foi cadastrado na base de dados dos administradores, e em breve você será contactado por eles! =)
+        </div>
+        <div class="modal-footer">
+          <button type="button" id = "closeModal" class="btn btn-primary" data-dismiss="modal" onclick="restart()">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Atenção  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-exclamation-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
+          </svg></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Algo deu errado <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-emoji-frown" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path fill-rule="evenodd" d="M4.285 12.433a.5.5 0 0 0 .683-.183A3.498 3.498 0 0 1 8 10.5c1.295 0 2.426.703 3.032 1.75a.5.5 0 0 0 .866-.5A4.498 4.498 0 0 0 8 9.5a4.5 4.5 0 0 0-3.898 2.25.5.5 0 0 0 .183.683z"/>
+            <path d="M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/>
+          </svg> <br>
+
+          Verifique se todos os campos foram preenchidos com dados válidos e tente novamente.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Entendi</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js" integrity="sha512-DZqqY3PiOvTP9HkjIWgjO6ouCbq+dxqWoJZ/Q+zPYNHmlnI2dQnbJ5bxAHpAMw+LXRm4D72EIRXzvcHQtE8/VQ==" crossorigin="anonymous"></script>
+    <script src="./js/scripts.js"></script>
+  </body>
+
+ 
+  
+</html>
