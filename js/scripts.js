@@ -1,4 +1,5 @@
     $('#btnSendData').click(() => {
+
           const firstName = $('#firstName').val();
           const lastName = $('#lastName').val();
           const age = $('#age').val();
