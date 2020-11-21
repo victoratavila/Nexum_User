@@ -60,26 +60,26 @@
 
         <select class="form-control" required name = "jobHelp" id="jobHelp" style = " margin-bottom: 10px; font-size: 20px"> 
             <option disabled selected>Oferece emprego?</option>
-            <option value="true">Verdadeiro</option>
-            <option value="false">Falso</option>
+            <option value="true">Sim</option>
+            <option value="false">Não</option>
         </select>
 
         <select class="form-control" required name = "habitationHelp" id="habitationHelp" style = " margin-bottom: 10px; font-size: 20px"> 
             <option disabled selected>Oferece moradia?</option>
-            <option value="true">Verdadeiro</option>
-            <option value="false">Falso</option>
+            <option value="true">Sim</option>
+            <option value="false">Não</option>
         </select>
 
         <select class="form-control" required name = "studyingHelp" id="studyingHelp" style = " margin-bottom: 10px; font-size: 20px"> 
-            <option disabled selected>Oferece</option>
-            <option value="true">Verdadeiro</option>
-            <option value="false">Falso</option>
+            <option disabled selected>Oferece educação</option>
+            <option value="true">Sim</option>
+            <option value="false">Não</option>
         </select>
 
 
         <textarea class="form-control" placeholder="Por favor descreva a ajuda que quer oferecer" id="helpDescription" rows="3"></textarea> <br>
 
-          <button type="button" id = "btnSendData" class = "btn btn-success" style="width: 100%">Cadastrar</button>
+          <button type="button" id = "btnSendHelperData" class = "btn btn-success" style="width: 100%">Cadastrar</button>
       </form>
     </div>
 
@@ -97,7 +97,7 @@
           </button>
         </div>
         <div class="modal-body">
-          O imigrante foi cadastrado na base de dados dos administradores, e em breve você será contactado por eles! =)
+         O ajudador foi cadastrado na base de dados dos administradores, e em breve você será contactado por eles! =)
         </div>
         <div class="modal-footer">
           <button type="button" id = "closeModal" class="btn btn-primary" data-dismiss="modal" onclick="restart()">Fechar</button>
@@ -107,6 +107,37 @@
   </div>
 
   <!-- Modal 2 -->
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Atenção  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-exclamation-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
+          </svg></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Algo deu errado <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-emoji-frown" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path fill-rule="evenodd" d="M4.285 12.433a.5.5 0 0 0 .683-.183A3.498 3.498 0 0 1 8 10.5c1.295 0 2.426.703 3.032 1.75a.5.5 0 0 0 .866-.5A4.498 4.498 0 0 0 8 9.5a4.5 4.5 0 0 0-3.898 2.25.5.5 0 0 0 .183.683z"/>
+            <path d="M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/>
+          </svg> <br>
+
+          Verifique se todos os campos foram preenchidos com dados válidos e tente novamente.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Entendi</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Erro Modal  -->
   <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
