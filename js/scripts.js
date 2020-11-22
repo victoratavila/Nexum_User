@@ -90,15 +90,32 @@
     }
 
     if(dataside == 10){
-      axios({
-      method: 'post',
-      url: 'http://localhost:3000/helper',
-      data: helperData
-      }).then(() => {
-          $('#exampleModal').modal('show');
-      }).catch(err => {
-          $('#exampleModal2').modal('show');
-      });
+
+          axios({
+          method: 'get',
+          url: `http://localhost:3000/helper/${helperData.email}`,
+          responseType: 'json'
+        }).then(data => {
+          
+          if(data.data == false){
+            axios({
+              method: 'post',
+              url: 'http://localhost:3000/helper',
+              data: helperData
+              }).then(() => {
+                  $('#exampleModal').modal('show');
+              }).catch(err => {
+                  $('#exampleModal2').modal('show');
+              });
+
+          } else {
+            $('#existingEmail').modal('show');
+          }  
+
+        }).catch(err => {
+          console.log(err);
+        })
+   
     } else {
           $('#exampleModal2').modal('show');
     }
